@@ -84,6 +84,20 @@ p.subtitle, p.copyright, p.devTitle {
   max-width: 18em;
 }
 
+.portfolioContainer {
+  display: flex;
+  height:100% !important;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.appsDevelopment {
+  display: flex;
+  margin:1em;
+  width:90%;
+  max-width: 20em;
+}
+
 
 }
 

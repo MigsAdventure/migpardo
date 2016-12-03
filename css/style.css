@@ -563,9 +563,10 @@ span.rotate-box-icon {
 	margin-bottom:30px;
 	overflow:hidden;
 	box-shadow: black 0 0 10px;
-	border: solid 1px darkslategrey;
+	border: solid 1px white;
 	padding:2em;
 	margin-top: 10px;
+	background-color: darkslategrey !important;
 
 }
 .portfolio_single_content:hover img{
