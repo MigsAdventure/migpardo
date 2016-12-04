@@ -17,7 +17,6 @@ $(document).ready(function () {
       description: "Pokedex Go is a pokedex specifically made for Pokemon Go. A CP calculator is included to see how strong a pokemon will be after evolving. Pokemons also make sounds.",
       reason: "Pokemon Go had just been released. After playing the game for several days, I found it hard to find a CP calculator online. I was determined to build a CP calculator, but somehow ended up making a pokedex with a CP calculator as a feature."
     },
-
     gokuHangman: {
       image: "assets/gokuLogo.png",
       github: "https://github.com/MigsAdventure/GokuHangman",
@@ -31,33 +30,12 @@ $(document).ready(function () {
   $('.infoBtn').on('click', function() {
     let currApp =  $(this).attr('alt');
 
-    switch(currApp) {
-      case 'Polaroid_Image':
-        $('#projectImage').attr('src', apps.polaroidImage.image);
-        $('#appTech').text(apps.polaroidImage.tech);
-        $('#appDesc').text(apps.polaroidImage.description);
-        $('#appWhy').text(apps.polaroidImage.reason);
-        $('#github').attr('href',apps.polaroidImage.github);
-        $('#preview').attr('href',apps.polaroidImage.preview);
-        break;
-      case 'Pokedex_Go':
-        $('#projectImage').attr('src', apps.pokedexGo.image);
-        $('#appTech').text(apps.pokedexGo.tech);
-        $('#appDesc').text(apps.pokedexGo.description);
-        $('#appWhy').text(apps.pokedexGo.reason);
-        $('#github').attr('href',apps.pokedexGo.github);
-        $('#preview').attr('href',apps.pokedexGo.preview);
-        break;
-      case 'Goku_Hangman':
-        $('#projectImage').attr('src', apps.gokuHangman.image);
-        $('#appTech').text(apps.gokuHangman.tech);
-        $('#appDesc').text(apps.gokuHangman.description);
-        $('#appWhy').text(apps.gokuHangman.reason);
-        $('#github').attr('href',apps.gokuHangman.github);
-        $('#preview').attr('href',apps.gokuHangman.preview);
-        break;
-      default: "sorry there was a problem"
-    }
+      $('#projectImage').attr('src', apps[currApp].image);
+      $('#appTech').text(apps[currApp].tech);
+      $('#appDesc').text(apps[currApp].description);
+      $('#appWhy').text(apps[currApp].reason);
+      $('#github').attr('href',apps[currApp].github);
+      $('#preview').attr('href',apps[currApp].preview);
 
     $('.hideInfo').addClass('detailContainer');
 
@@ -66,9 +44,6 @@ $(document).ready(function () {
   $('.closeBtn').on('click',function() {
       $('.hideInfo').removeClass('detailContainer');
   });
-
-
-
 
 
 });

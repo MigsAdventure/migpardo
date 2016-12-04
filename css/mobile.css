@@ -176,10 +176,10 @@ padding:1em;
   margin: .5em !important;
 }
 
-
-
-
-
+.appHoverlay a:hover {
+  background-color: lightslategrey;
+  cursor: pointer;
+}
 
 }
 
