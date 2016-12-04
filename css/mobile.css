@@ -152,6 +152,7 @@ h4,h5 {
 .infoSection {
   color:whitesmoke;
 background-color: black;
+padding:1em;
 }
 
 .optionsContainer {
@@ -214,6 +215,12 @@ background-color: black;
     }
 
     .infoContainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .appInfoContainer {
       display: flex;
       justify-content: center;
       flex-direction: column;
