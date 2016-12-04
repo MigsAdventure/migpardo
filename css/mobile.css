@@ -133,6 +133,7 @@ p.subtitle, p.copyright, p.devTitle {
   flex-flow: row wrap;
   padding:1em;
   width:80%;
+  justify-content: center;
 }
 
 h4,h5 {
@@ -199,10 +200,24 @@ background-color: black;
       margin:2.3em 1.5em;
     }
 
+    .appSection {
+      width:40% !important;
+    }
+
+    .infoSection {
+      width: 60% !important;
+    }
+
+    .detailContainer {
+      align-items: center;
+    }
+
     .infoContainer {
       display: flex;
       justify-content: center;
+      flex-direction: column;
     }
+
 
     .whoMainContainer, .whyMainContainer {
       width:50%;

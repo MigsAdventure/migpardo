@@ -18,7 +18,6 @@ $(document).ready(function () {
 
   $('.infoBtn').on('click', function() {
     let currApp =  $(this).attr('alt');
-    console.log('currApp:', currApp);
 
     switch(currApp) {
       case 'Pokedex_Go':
