@@ -4,7 +4,7 @@ $(document).ready(function() {
   var words = ["coding","house","programming","fun","amazing","you","awesome","creative","believe","core","cast","mini","important","shy","outgoing","clean","lazy","picture","korea","gym","gamer","chill","pizza","pokemon","go","funny","cool","sleep","rest","detrimental","sure","shore","crazy","sophisticated","small","big","eager","boisterous","convivial","witty","boring","secured","relax","soften","unwind","recline","harmful","adverse","destructive","diminutive","immense","fragmentary","confined","inadequate","meager","negligible","restricted","limited","spare","thin","toy","register","computer","process","formulate","list","syntax","edit","draft","drag","dry","wet","design","web","book","learn","feed","schedule","forget","disperse","scatter","brainwash","school","church","park","fireworks","war","peace","love","respect","unity","coffee","shop","modify","sharpen","load","train","box","instill","implant","ground","drill","bed","pillow","dragon","ball","anime","exercise","fight"];
   // This function will reset my variables when a button is pressed or when the page is refreshed. It also chooses a random word and adds it to the page in a hidden state.
   function guessLetters () {
-    
+
     var guessArray = [];
     var guess = " ";
     //count variable will be used add each piece of the goku images
@@ -32,7 +32,7 @@ $(document).ready(function() {
     //changes all of the keyboard keys back to a white background and black text
     $("h1").css({"background-color": "white", "color": "black"});
     //lettersLeft variable is necessary to know how many chars need to be guessed. Once it reaches 0, it prompts user they have won the game
-    lettersLeft = guess.length; 
+    lettersLeft = guess.length;
     //chooses a random letter from the current word as a hint to show the user
     hint = guess[Math.floor(Math.random() * guess.length)];
     $(".hint").text("Hint: " + hint);
@@ -48,14 +48,14 @@ $(document).ready(function() {
 	function keys(code1, code2) {
     var charArray = [];
 
-  	for (var i = code1; i < code2; i++) { 
+  	for (var i = code1; i < code2; i++) {
         var chars = String.fromCharCode(i);
         //add h1 element with classname of character and text of character in uppercase to the charArray
     		charArray.push($("<h1>").addClass(chars).text(chars.toUpperCase()));
     } //end of for loop
 
     //adds charArray to the body
-    $(".letterContainer").append(charArray);    
+    $(".letterContainer").append(charArray);
   } // end of keys function
 
   //65 to 90 is A-Z
@@ -71,8 +71,8 @@ $(document).ready(function() {
       var myKey = x.key.toUpperCase();
 
    }
-    
-      
+
+
       console.log($currKey);
       console.log(myKey);
       //checks for the current keys background-color. If it's black it will alert the user that it has been pressed.
@@ -81,7 +81,7 @@ $(document).ready(function() {
         //if the background color is not black, it will check if the background is white.
        } else if ($currKey.css("background-color") === "rgb(255, 255, 255)") {
           // if the key is pressed and  background is not blk, change to blk
-          $currKey.css({"color": "white", "background": "black"}); 
+          $currKey.css({"color": "white", "background": "black"});
           //for each h2 element which is each individual letter of the chosen word, it will run a function
           $("h2").each(function () {
             //The function it will run will test if the current key pressed matches the h2 elements text
@@ -96,7 +96,7 @@ $(document).ready(function() {
 
           }); // end of h2 each function
 
-        } //end of else if for background color white 
+        } //end of else if for background color white
 
       if (lettersLeft === 0) {
         alert("CONGRATS! YOU WIN!!");
@@ -128,7 +128,7 @@ $(document).ready(function() {
   } //end of keyRecognition function
 
   function mobileResize() {
-    
+
     $(".wordButton").hide();
     $("h1").css({"padding":"7px", "border-radius":"7px", "margin":".2em", "font-size":"2.5vh"});
     $(".letterContainer").css({"width":"97%","bottom":"3%", "height":"auto"});
@@ -136,7 +136,7 @@ $(document).ready(function() {
     $(".hangmanContainer").css({"height":"50%"});
     $(".bottomHalf").css({"height":"50%"});
   }
- 	
+
   if ($(window).width() < 800) {
     $("h1").click(keyRecognition);
     $(".hangmanContainer").mousedown(function () {
@@ -153,14 +153,9 @@ $(document).ready(function() {
       $(".letterContainer").show();
       mobileResize();
     });
-        
+
   } else if ($(window).width() >= 800){
     $(document).keypress(keyRecognition);
   }
   
 });//end of document ready function
-
-
-
-
-
