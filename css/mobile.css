@@ -126,6 +126,15 @@ p.subtitle, p.copyright, p.devTitle {
   position: absolute;
   top:1em;
   right:1em;
+  padding:10px;
+}
+
+.closeBtn:hover {
+  text-shadow: white 0 0 1px,
+               white 0 0 3px,
+               white 0 0 5px,
+               white 0 0 10px;
+  cursor: pointer;
 }
 
 .appSection {
