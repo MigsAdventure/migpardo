@@ -566,6 +566,9 @@ span.rotate-box-icon {
 	padding:2em;
 	margin-top: 10px;
 	background-color: darkslategrey !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 }
 .portfolio_single_content:hover img{

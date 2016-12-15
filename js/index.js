@@ -1,6 +1,24 @@
 $(document).ready(function () {
 
   let apps = {
+    tripify: {
+      image: "assets/tripify.png",
+      github: "https://github.com/MigsAdventure/Tripify",
+      preview: "http://tripify-app.herokuapp.com/",
+      tech: "React, Redux, Bootstrap, Flexbox, Firebase, GeoFire, Amazon S3, MongoDB and Heroku.",
+      api: "Google Places API, Maps Embed API, Maps Javascript API, Geolocation API, and Directions API",
+      description: "",
+      reason: ""
+    },
+    animeLunchBox: {
+      image: "assets/animeLunchBox.png",
+      github: "https://github.com/Nemsae/Anime-LunchBox",
+      preview: "http://anime-lunchbox.herokuapp.com/",
+      tech: "React, Flux, Bootstrap, Flexbox, Firebase and Heroku.",
+      api: "Giphy API and Hummingbird API",
+      description: "Create an account by using google account or email and password. Search for anime and add to favorites or add to your watchlist. Preview an anime by clicking on it. One can also view anime details such as number of episodes, genres, type of series, etc. Any search made will also change the navbar images.",
+      reason: "A friend of mine and I had an anime conversation. We had an idea to build an anime app, so we made Anime Lunchbox."
+    },
     memoriesAlbum: {
       image: "assets/memoriesAlbum.png",
       github: "https://github.com/johnsalay/memories",
@@ -49,9 +67,7 @@ $(document).ready(function () {
     $('#appWhy').text(apps[currApp].reason);
     $('#github').attr('href',apps[currApp].github);
     $('#preview').attr('href',apps[currApp].preview);
-
     $('.hideInfo').addClass('detailContainer');
-
   });
 
   $('.closeBtn').on('click',function() {
