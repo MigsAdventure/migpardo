@@ -13,7 +13,7 @@ $(document).ready(function () {
     animeLunchBox: {
       image: "assets/animeLunchBox.png",
       github: "https://github.com/Nemsae/Anime-LunchBox",
-      preview: "http://anime-lunchbox.herokuapp.com/",
+      preview: "http://anime-lunchbox-app.herokuapp.com/",
       tech: "React, Flux, Bootstrap, Flexbox, Firebase and Heroku.",
       api: "Giphy API and Hummingbird API",
       description: "Create an account by using google account or email and password. Search for anime and add to favorites or add to your watchlist. Preview an anime by clicking on it. One can also view anime details such as number of episodes, genres, type of series, etc. Any search made will also change the navbar images.",
