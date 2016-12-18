@@ -5,10 +5,10 @@ $(document).ready(function () {
       image: "assets/tripify.png",
       github: "https://github.com/MigsAdventure/Tripify",
       preview: "http://tripify-app.herokuapp.com/",
-      tech: "React, Redux, Bootstrap, Flexbox, Firebase, GeoFire, Amazon S3, MongoDB and Heroku.",
+      tech: "React, Redux, Bootstrap, Flexbox, Express, Firebase, GeoFire, Amazon S3, MongoDB and Heroku.",
       api: "Google Places API, Maps Embed API, Maps Javascript API, Geolocation API, and Directions API",
-      description: "",
-      reason: ""
+      description: "Search for trips created by other users or modify them. Create a trip by searching for places and adding waypoints. View previous, saved, and current trips. Upload images to a trip, so others can see. Modify any waypoints to create someone elses trip your own. This app is a work in progress.",
+      reason: "This app is similar to a bucket list. There's places to explore, so why not make a trip out of it? Tripify is an app I will personally use to plan out all of my future trips - whether it's exploring restaurants around my city or a road trip around the United States."
     },
     animeLunchBox: {
       image: "assets/animeLunchBox.png",
@@ -23,7 +23,7 @@ $(document).ready(function () {
       image: "assets/memoriesAlbum.png",
       github: "https://github.com/johnsalay/memories",
       preview: "http://memoriesalbum.herokuapp.com/",
-      tech: "React, Flux, Bootstrap, Flexbox, MySQL and Heroku.",
+      tech: "React, Flux, Express, Bootstrap, Flexbox, MySQL and Heroku.",
       api: "Microsoft Cognitive Services Computer Vision API, Emotion API, and Bing Image Search API.",
       description: "Search for images and add them to an album. User can also add images to album using an image url. There is also a view that shows current trending images. The album uses a MySQL database. Currently, there are no user accounts, therefore all images added to album will be shared between all users. This app is still a work in progress.",
       reason: "A friend of mine and I found out about Microsoft Cognitive Services. We wanted to practice using their API. I built a basic app using polaroids with jQuery in the past and he wanted to create a photo album. Thus, we developed this app."
