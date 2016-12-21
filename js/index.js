@@ -40,7 +40,7 @@ $(document).ready(function () {
     pokedexGo: {
       image: "assets/pokedexLogo.png",
       github: "https://github.com/MigsAdventure/PokedexGO",
-      preview: "webApps/PokedexGO/pokedexGo.html",
+      preview: "https://migsadventure.github.io/PokedexGO/",
       tech: "jQuery and BootStrap",
       api: '',
       description: "Pokedex Go is a pokedex specifically made for Pokemon Go. A CP calculator is included to see how strong a pokemon will be after evolving. Pokemons also make sounds.",
@@ -49,7 +49,7 @@ $(document).ready(function () {
     gokuHangman: {
       image: "assets/gokuLogo.png",
       github: "https://github.com/MigsAdventure/GokuHangman",
-      preview: "webApps/GokuHangMan/gokuHangman.html",
+      preview: "https://migsadventure.github.io/GokuHangman/",
       tech: "jQuery and BootStrap",
       api: '',
       description: "A goku hangman app. There is one letter that is given as a hint. The app will let one know when a letter has been pressed more than once.",
