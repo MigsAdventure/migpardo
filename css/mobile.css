@@ -92,10 +92,17 @@ p.subtitle, p.copyright, p.devTitle {
 }
 
 .appsDevelopment {
+  position: static !important;
   display: flex;
   margin:1em;
   width:90%;
   max-width: 20em;
+  align-items: center;
+  flex-direction: column;
+}
+
+.appsDevelopment h3 {
+  margin-top: -.5em;
 }
 
 .hideInfo {

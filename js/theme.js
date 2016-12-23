@@ -152,8 +152,7 @@ $('.portfolio_menu ul li').click(function(){
 
 var $container = $('#portfolio');
 $container.isotope({
-  itemSelector: '.col-sm-4',
-  layoutMode: 'fitRows'
+  itemSelector: '.appsDevelopment',
 });
 $('#filters').on( 'click', 'a', function() {
   var filterValue = $(this).attr('data-filter');
