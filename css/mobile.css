@@ -115,6 +115,9 @@ p.subtitle, p.copyright, p.devTitle {
 .detailContainer {
   position: fixed;
   top:0;
+  left:0;
+  right:0;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
   width:100%;
