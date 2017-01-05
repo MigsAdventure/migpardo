@@ -797,6 +797,9 @@ span.rotate-box-icon {
 .prices .panel-default .panel-heading {
 	padding-top: 25px;
 	border: none;
+	width: 80%;
+	max-width: 30em;
+	margin:auto;
 }
 .prices .panel-default .panel-body {
 	background-color: #EEE;
