@@ -1,15 +1,6 @@
 $(document).ready(function () {
 
   let apps = {
-    tripify: {
-      image: "assets/tripify.png",
-      github: "https://github.com/MigsAdventure/Tripify",
-      preview: "http://tripify-app.herokuapp.com/",
-      tech: "React, Redux, Bootstrap, Flexbox, Express, Firebase, GeoFire, Amazon S3, MongoDB and Heroku.",
-      api: "Google Places API, Maps Embed API, Maps Javascript API, Geolocation API, and Directions API",
-      description: "Search for trips created by other users or modify them. Create a trip by searching for places and adding waypoints. View previous, saved, and current trips. Upload images to a trip, so others can see. Modify any waypoints to create someone elses trip your own. This app is a work in progress.",
-      reason: "This app is similar to a bucket list. There's places to explore, so why not make a trip out of it? Tripify is an app I will personally use to plan out all of my future trips - whether it's exploring restaurants around my city or a road trip around the United States."
-    },
     animeLunchBox: {
       image: "assets/animeLunchBox.png",
       github: "https://github.com/Nemsae/Anime-LunchBox",
@@ -18,15 +9,6 @@ $(document).ready(function () {
       api: "Giphy API and Hummingbird API",
       description: "Create an account by using google account or email and password. Search for anime and add to favorites or add to your watchlist. Preview an anime by clicking on it. One can also view anime details such as number of episodes, genres, type of series, etc. Any search made will also change the navbar images.",
       reason: "A friend of mine and I had an anime conversation. We had an idea to build an anime app, so we made Anime Lunchbox."
-    },
-    memoriesAlbum: {
-      image: "assets/memoriesAlbum.png",
-      github: "https://github.com/johnsalay/memories",
-      preview: "http://memoriesalbum.herokuapp.com/",
-      tech: "React, Flux, Express, Bootstrap, Flexbox, MySQL and Heroku.",
-      api: "Microsoft Cognitive Services Computer Vision API, Emotion API, and Bing Image Search API.",
-      description: "Search for images and add them to an album. User can also add images to album using an image url. There is also a view that shows current trending images. The album uses a MySQL database. Currently, there are no user accounts, therefore all images added to album will be shared between all users. This app is still a work in progress.",
-      reason: "A friend of mine and I found out about Microsoft Cognitive Services. We wanted to practice using their API. I built a basic app using polaroids with jQuery in the past and he wanted to create a photo album. Thus, we developed this app."
     },
     polaroidImage: {
       image: "assets/polaroidImage.png",
@@ -54,6 +36,60 @@ $(document).ready(function () {
       api: '',
       description: "A goku hangman app. There is one letter that is given as a hint. The app will let one know when a letter has been pressed more than once.",
       reason: "I grew up watching dragonball, so I chose the main character as the hangman character."
+    },
+    ncsoft: {
+      image: "assets/gokuLogo.png",
+      github: "https://github.com/MigsAdventure/GokuHangman",
+      preview: "https://migsadventure.github.io/GokuHangman/",
+      tech: "jQuery and BootStrap",
+      api: '',
+      description: "A goku hangman app. There is one letter that is given as a hint. The app will let one know when a letter has been pressed more than once.",
+      reason: "I grew up watching dragonball, so I chose the main character as the hangman character."
+    },
+    aion: {
+      image: "assets/gokuLogo.png",
+      github: "https://github.com/MigsAdventure/GokuHangman",
+      preview: "https://migsadventure.github.io/GokuHangman/",
+      tech: "jQuery and BootStrap",
+      api: '',
+      description: "A goku hangman app. There is one letter that is given as a hint. The app will let one know when a letter has been pressed more than once.",
+      reason: "I grew up watching dragonball, so I chose the main character as the hangman character."
+    },
+    lineage2: {
+      image: "assets/gokuLogo.png",
+      github: "https://github.com/MigsAdventure/GokuHangman",
+      preview: "https://migsadventure.github.io/GokuHangman/",
+      tech: "jQuery and BootStrap",
+      api: '',
+      description: "A goku hangman app. There is one letter that is given as a hint. The app will let one know when a letter has been pressed more than once.",
+      reason: "I grew up watching dragonball, so I chose the main character as the hangman character."
+    },
+    aion_legions: {
+      image: "assets/gokuLogo.png",
+      github: "https://github.com/MigsAdventure/GokuHangman",
+      preview: "https://migsadventure.github.io/GokuHangman/",
+      tech: "jQuery and BootStrap",
+      api: '',
+      description: "A goku hangman app. There is one letter that is given as a hint. The app will let one know when a letter has been pressed more than once.",
+      reason: "I grew up watching dragonball, so I chose the main character as the hangman character."
+    },
+    bns: {
+      image: "assets/gokuLogo.png",
+      github: "https://github.com/MigsAdventure/GokuHangman",
+      preview: "https://migsadventure.github.io/GokuHangman/",
+      tech: "jQuery and BootStrap",
+      api: '',
+      description: "A goku hangman app. There is one letter that is given as a hint. The app will let one know when a letter has been pressed more than once.",
+      reason: "I grew up watching dragonball, so I chose the main character as the hangman character."
+    },
+    ncsoft_signup: {
+      image: "assets/gokuLogo.png",
+      github: "https://github.com/MigsAdventure/GokuHangman",
+      preview: "https://migsadventure.github.io/GokuHangman/",
+      tech: "jQuery and BootStrap",
+      api: '',
+      description: "A goku hangman app. There is one letter that is given as a hint. The app will let one know when a letter has been pressed more than once.",
+      reason: "I grew up watching dragonball, so I chose the main character as the hangman character."
     }
   }
 
@@ -73,6 +109,4 @@ $(document).ready(function () {
   $('.closeBtn').on('click',function() {
     $('.hideInfo').removeClass('detailContainer');
   });
-
-
 });

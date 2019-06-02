@@ -70,7 +70,7 @@ h2 {
 	font-size: 30px;
 }
 h3 {
-	font-size: 26px;
+	font-size: 22px;
 }
 h4 {
 	font-size: 22px;
@@ -569,7 +569,7 @@ span.rotate-box-icon {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
+	height: 250px;
 }
 .portfolio_single_content:hover img{
 	 -o-transform: scale(1.5);
